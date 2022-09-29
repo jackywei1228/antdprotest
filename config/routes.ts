@@ -42,8 +42,13 @@ export default [
       },
       {
         path: '/admin/sub-page',
-        name: 'sub-page',
+        name: 'Overview',
         component: './Admin',
+      },
+      {
+        path: '/admin/UserManager',
+        name: 'User Manager',
+        component: './UserManager',
       },
     ],
   },
@@ -61,12 +66,18 @@ export default [
         name: 'Main',
         component: './DeviceLogConfig',
       },
+      {
+        name: 'Role Manager',
+        path: '/DeviceLogConfig/RoleManager',
+        component: './TableList',
+      },
     ],
   },
   {
     name: 'list.table-list',
     icon: 'table',
     path: '/list',
+    layout: false,
     component: './TableList',
   },
   {
