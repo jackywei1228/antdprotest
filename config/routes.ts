@@ -48,7 +48,7 @@ export default [
     ],
   },
   {
-    name: 'Device Log Config',
+    name: 'Device Log Manager',
     path: '/DeviceLogConfig',
     icon: 'crown',
     routes: [
