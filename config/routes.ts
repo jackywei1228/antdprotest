@@ -53,7 +53,7 @@ export default [
     ],
   },
   {
-    name: 'Device Log Manager',
+    name: 'Log Config Manager',
     path: '/DeviceLogConfig',
     icon: 'crown',
     routes: [
@@ -63,13 +63,61 @@ export default [
       },
       {
         path: '/DeviceLogConfig/DeviceLogConfig',
-        name: 'Main',
+        name: 'Overview',
         component: './DeviceLogConfig',
       },
       {
         name: 'Role Manager',
         path: '/DeviceLogConfig/RoleManager',
         component: './TableList',
+      },
+    ],
+  },
+  {
+    name: 'Log Storage Manager',
+    path: '/LogStorageManager',
+    icon: 'crown',
+    routes: [
+      {
+        path: '/LogStorageManager',
+        redirect: '/LogStorageManager/LogStorageManager',
+      },
+      {
+        path: '/LogStorageManager/LogStorageManager',
+        name: 'Overview',
+        component: './LogStorageManager',
+      },
+    ],
+  },
+  {
+    name: 'Log Analysis Manager',
+    path: '/LogAnalysisManager',
+    icon: 'crown',
+    routes: [
+      {
+        path: '/LogAnalysisManager',
+        redirect: '/LogAnalysisManager/LogAnalysisManager',
+      },
+      {
+        path: '/LogAnalysisManager/LogAnalysisManager',
+        name: 'Overview',
+        component: './LogAnalysisManager',
+      },
+    ],
+  },
+  {
+    name: 'Log Archive Manager',
+    path: '/LogArchiveManager',
+    icon: 'crown',
+    routes: [
+      {
+        path: '/LogArchiveManager',
+        redirect: '/LogArchiveManager/LogArchiveManager',
+      },
+      {
+        path: '/LogArchiveManager/LogArchiveManager',
+        name: 'Overview',
+        component: './LogArchiveManager',
       },
     ],
   },
